@@ -104,8 +104,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-835742289.eot");
-  src: url("../fonts/icons-835742289.eot?#iefix") format("eot"), url("../fonts/icons-835742289.woff2") format("woff2"), url("../fonts/icons-835742289.woff") format("woff"), url("../fonts/icons-835742289.ttf") format("truetype"), url("../fonts/icons-835742289.svg#icons-835742289") format("svg");
+  src: url("../fonts/icons-123532358.eot");
+  src: url("../fonts/icons-123532358.eot?#iefix") format("eot"), url("../fonts/icons-123532358.woff2") format("woff2"), url("../fonts/icons-123532358.woff") format("woff"), url("../fonts/icons-123532358.ttf") format("truetype"), url("../fonts/icons-123532358.svg#icons-123532358") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5614,6 +5614,159 @@ button.video-button.video-button--paused .video-button__play {
   float: none;
 }
 .contact-info.contact-info--sheet .invisible-labels {
+  flex: 1 1 63%;
+}
+
+/* Removing the image from contact info paragraph if in 2:1 Slab 1/3 region or 3 up flex grid. */
+.grid.grid--2-up .contact-info-paragraph__left,
+.grid.grid--3-up .contact-info-paragraph__left,
+.grid__column.grid__column--minor .contact-info-paragraph__left {
+  display: none;
+}
+
+/* Making the photo 50% width for flex grid 2 up but only on large breakpoint*/
+@media screen and (min-width: 58rem) {
+  .grid.grid--2-up .contact-info-paragraph__left {
+    display: flex;
+    flex: 0 0 40%;
+  }
+}
+/* main styling */
+.contact-info-paragraph__heading {
+  margin-bottom: 1rem;
+}
+.contact-info-paragraph__heading p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 76rem) {
+  .contact-info-paragraph__heading p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.contact-info-paragraph__content {
+  position: relative;
+  display: flex;
+  margin-top: 1rem;
+  border-top: 1px transparent solid;
+}
+.contact-info-paragraph__content a {
+  word-break: break-all;
+}
+@media screen and (min-width: 35rem) {
+  .contact-info-paragraph__content {
+    margin-top: 2.25rem;
+  }
+}
+.contact-info-paragraph__content::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #0033a0;
+  content: "";
+}
+.contact-info-paragraph__left {
+  display: none;
+  top: -1px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 35rem) {
+  .contact-info-paragraph__left {
+    display: flex;
+    flex: 0 0 30%;
+    margin: 2.25rem 2rem 2rem 0;
+  }
+}
+@media screen and (min-width: 58rem) {
+  .contact-info-paragraph__left {
+    display: flex;
+    flex: 0 0 20%;
+    margin: 2.25rem 2rem 2rem 0;
+  }
+}
+.contact-info-paragraph__right {
+  flex: 1 1;
+  top: -1px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 35rem) {
+  .contact-info-paragraph__right {
+    margin: 2.25rem 0 2rem 0;
+  }
+}
+@media screen and (min-width: 58rem) {
+  .contact-info-paragraph__right {
+    margin: 2.25rem 0 2rem 0;
+  }
+}
+.contact-info-paragraph__name {
+  font-size: 1.1667rem;
+  line-height: 2rem;
+  display: block;
+  font-weight: 500;
+}
+@media screen and (min-width: 76rem) {
+  .contact-info-paragraph__name {
+    font-size: 1.1667rem;
+    line-height: 2rem;
+  }
+}
+.contact-info-paragraph__title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+}
+@media screen and (min-width: 76rem) {
+  .contact-info-paragraph__title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.contact-info-paragraph dd {
+  font-size: 1.1667rem;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+}
+@media screen and (min-width: 76rem) {
+  .contact-info-paragraph dd {
+    font-size: 1.1667rem;
+    line-height: 2rem;
+  }
+}
+.contact-info-paragraph dd .link--fancy {
+  font-size: 1.1667rem;
+  line-height: 2rem;
+  margin-left: -1.5rem;
+}
+@media screen and (min-width: 76rem) {
+  .contact-info-paragraph dd .link--fancy {
+    font-size: 1.1667rem;
+    line-height: 2rem;
+  }
+}
+.contact-info-paragraph.contact-info-paragraph--sheet {
+  margin-bottom: 2rem;
+  padding: 0;
+  border-width: 0;
+  background-color: #fff;
+}
+.contact-info-paragraph.contact-info-paragraph--sheet .contact-info-paragraph__content {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.contact-info-paragraph.contact-info-paragraph--sheet .contact-info-paragraph__photo {
+  flex: 0 1 37%;
+  align-self: flex-start;
+  width: auto;
+  margin: 0;
+  margin-right: 1rem;
+  float: none;
+}
+.contact-info-paragraph.contact-info-paragraph--sheet .invisible-labels {
   flex: 1 1 63%;
 }
 
