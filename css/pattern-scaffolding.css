@@ -97,16 +97,15 @@ body {
 @supports (grid-template-columns: 1px) {
   .sg-colors {
     display: grid;
-    grid-auto-rows: auto;
-    grid-gap: 0.5rem;
-    grid-auto-rows: auto;
-    grid-auto-rows: auto;
-    grid-auto-rows: auto;
-    grid-auto-rows: auto;
   }
   .sg-colors .sg-colors__column {
     width: auto;
     margin: 0;
+  }
+  .sg-colors {
+    grid-auto-rows: auto;
+    grid-gap: 0.5rem;
+    grid-auto-rows: auto;
   }
   @media screen and (min-width: 35rem) {
     .sg-colors {
@@ -114,15 +113,24 @@ body {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .sg-colors {
+    grid-auto-rows: auto;
+  }
   @media screen and (min-width: 58rem) {
     .sg-colors {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .sg-colors {
+    grid-auto-rows: auto;
+  }
   @media screen and (min-width: 76rem) {
     .sg-colors {
       grid-gap: 2rem;
     }
+  }
+  .sg-colors {
+    grid-auto-rows: auto;
   }
 }
 
@@ -148,13 +156,15 @@ body {
 .sg-colors pre {
   font-size: 0.75rem;
   line-height: 1rem;
-  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 76rem) {
   .sg-colors pre {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+}
+.sg-colors pre {
+  margin-bottom: 0.5rem;
 }
 
 .sg-swatch {

@@ -11,7 +11,6 @@
 .uky-headline .uky-headline__super {
   font-size: 0.875rem;
   line-height: 1rem;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 76rem) {
   .uky-headline .uky-headline__super {
@@ -19,16 +18,21 @@
     line-height: 1rem;
   }
 }
+.uky-headline .uky-headline__super {
+  text-transform: uppercase;
+}
 .uky-headline .uky-headline__sub {
   font-size: 1.1667rem;
   line-height: 1.5rem;
-  font-style: italic;
 }
 @media screen and (min-width: 76rem) {
   .uky-headline .uky-headline__sub {
     font-size: 1.1667rem;
     line-height: 1.5rem;
   }
+}
+.uky-headline .uky-headline__sub {
+  font-style: italic;
 }
 .uky-headline .uky-headline__sub i,
 .uky-headline .uky-headline__sub em {
@@ -51,8 +55,6 @@
 .editorial aside .uky-headline .uky-headline__super {
   font-size: 1rem;
   line-height: 1rem;
-  color: #515664;
-  font-weight: 500;
 }
 @media screen and (min-width: 76rem) {
   .teaser .uky-headline .uky-headline__super,
@@ -63,14 +65,19 @@
     line-height: 1rem;
   }
 }
+.teaser .uky-headline .uky-headline__super,
+.link-collection .uky-headline .uky-headline__super,
+.image-gallery-block .uky-headline .uky-headline__super,
+.editorial aside .uky-headline .uky-headline__super {
+  color: #515664;
+  font-weight: 500;
+}
 .teaser .uky-headline .uky-headline__sub,
 .link-collection .uky-headline .uky-headline__sub,
 .image-gallery-block .uky-headline .uky-headline__sub,
 .editorial aside .uky-headline .uky-headline__sub {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: #515664;
-  font-weight: 500;
 }
 @media screen and (min-width: 76rem) {
   .teaser .uky-headline .uky-headline__sub,
@@ -80,6 +87,13 @@
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
+}
+.teaser .uky-headline .uky-headline__sub,
+.link-collection .uky-headline .uky-headline__sub,
+.image-gallery-block .uky-headline .uky-headline__sub,
+.editorial aside .uky-headline .uky-headline__sub {
+  color: #515664;
+  font-weight: 500;
 }
 .teaser .uky-headline .uky-headline__head,
 .link-collection .uky-headline .uky-headline__head,
@@ -274,3 +288,4 @@ h6.uky-headline .uky-headline__head {
     line-height: 1.5rem;
   }
 }
+/*# sourceMappingURL=uky-headline.css.map */

@@ -1,13 +1,15 @@
 :root {
   font-size: 1rem;
   line-height: 1rem;
-  position: relative;
 }
 @media screen and (min-width: 76rem) {
   :root {
     font-size: 1rem;
     line-height: 1rem;
   }
+}
+:root {
+  position: relative;
 }
 
 body {

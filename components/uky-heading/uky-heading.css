@@ -6,7 +6,6 @@ h5.heading--display,
 h6.heading--display {
   font-size: 1.1667rem;
   line-height: 1.5rem;
-  font-weight: normal;
 }
 @media screen and (min-width: 76rem) {
   h1.heading--display,
@@ -19,18 +18,28 @@ h6.heading--display {
     line-height: 1.5rem;
   }
 }
+h1.heading--display,
+h2.heading--display,
+h3.heading--display,
+h4.heading--display,
+h5.heading--display,
+h6.heading--display {
+  font-weight: normal;
+}
 
 .heading--display {
   font-size: 1.775rem;
   line-height: 2rem;
-  position: relative;
-  margin-bottom: 2rem;
 }
 @media screen and (min-width: 76rem) {
   .heading--display {
     font-size: 1.875rem;
     line-height: 2rem;
   }
+}
+.heading--display {
+  position: relative;
+  margin-bottom: 2rem;
 }
 .heading--display span {
   display: inline-block;
@@ -74,3 +83,4 @@ h6.heading--display {
     margin-bottom: 5.5rem;
   }
 }
+/*# sourceMappingURL=uky-heading.css.map */

@@ -7,13 +7,15 @@
 .ck-content :root {
   font-size: 1rem;
   line-height: 1rem;
-  position: relative;
 }
 @media screen and (min-width: 76rem) {
   .ck-content :root {
     font-size: 1rem;
     line-height: 1rem;
   }
+}
+.ck-content :root {
+  position: relative;
 }
 @font-face {
   font-family: "blackbikeclean";
@@ -60,8 +62,8 @@
 }
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-524511260.eot");
-  src: url("../fonts/icons-524511260.eot?#iefix") format("eot"), url("../fonts/icons-524511260.woff2") format("woff2"), url("../fonts/icons-524511260.woff") format("woff"), url("../fonts/icons-524511260.ttf") format("truetype"), url("../fonts/icons-524511260.svg#icons-524511260") format("svg");
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("eot"), url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1041,6 +1043,14 @@
 .ck-content .checker-divider::after {
   max-width: 72rem;
   margin: 0 auto;
+}
+.ck-content .checker-divider::after > :first-child {
+  margin-top: 0;
+}
+.ck-content .checker-divider::after > :last-child {
+  margin-bottom: 0;
+}
+.ck-content .checker-divider::after {
   display: block;
   width: 100%;
   font-family: "iconfont";
@@ -1055,13 +1065,6 @@
   text-align: right;
   position: relative;
   bottom: -1rem;
-  padding: 0 1rem;
-}
-.ck-content .checker-divider::after > :first-child {
-  margin-top: 0;
-}
-.ck-content .checker-divider::after > :last-child {
-  margin-bottom: 0;
 }
 @media screen and (min-width: 35rem) {
   .ck-content .checker-divider::after {
@@ -1082,6 +1085,9 @@
   .ck-content .checker-divider::after {
     bottom: -2.5rem;
   }
+}
+.ck-content .checker-divider::after {
+  padding: 0 1rem;
 }
 @media screen and (min-width: 35rem) {
   .ck-content .checker-divider::after {
@@ -1184,13 +1190,15 @@
 .ck-content p {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 1rem;
 }
 @media screen and (min-width: 76rem) {
   .ck-content p {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+.ck-content p {
+  margin-bottom: 1rem;
 }
 .ck-content .intro {
   font-size: 1.25rem;
@@ -1240,12 +1248,6 @@
   background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
   background-repeat: no-repeat;
   background-position: 0 0.5em, 0 0;
-  position: relative;
-  transition: 0.2s background-position ease-out;
-  font-weight: 300;
-  text-decoration: none;
-  z-index: 1;
-  text-decoration: none;
 }
 .ck-content .underline-link:link, .ck-content .underline-link:visited,
 .ck-content .editorial a:link,
@@ -1257,6 +1259,14 @@
 .ck-content .editorial a:active {
   color: #0033a0;
 }
+.ck-content .underline-link,
+.ck-content .editorial a {
+  position: relative;
+  transition: 0.2s background-position ease-out;
+  font-weight: 300;
+  text-decoration: none;
+  z-index: 1;
+}
 .ck-content .underline-link.link--fancy,
 .ck-content .editorial a.link--fancy {
   background-image: none;
@@ -1266,22 +1276,28 @@
 .ck-content .editorial a:hover {
   background-position: 0 0, 1000px 2px;
 }
+.ck-content .underline-link,
+.ck-content .editorial a {
+  text-decoration: none;
+}
 .ck-content .underline-link--light {
   background-attachment: scroll;
   background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 2px, transparent 2px, transparent 100%);
   background-repeat: no-repeat;
   background-position: 0 0.5em, 0 0;
-  position: relative;
-  transition: 0.2s background-position ease-out;
-  font-weight: 300;
-  text-decoration: none;
-  z-index: 1;
 }
 .ck-content .underline-link--light:link, .ck-content .underline-link--light:visited {
   color: #000000;
 }
 .ck-content .underline-link--light:hover, .ck-content .underline-link--light:active {
   color: #0033a0;
+}
+.ck-content .underline-link--light {
+  position: relative;
+  transition: 0.2s background-position ease-out;
+  font-weight: 300;
+  text-decoration: none;
+  z-index: 1;
 }
 .ck-content .underline-link--light.link--fancy {
   background-image: none;
@@ -1295,12 +1311,6 @@
 .ck-content .editorial .link--fancy-reverse {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  display: inline-block;
-  position: relative;
-  padding-left: 1.5rem;
-  transition: color 0.2s ease-in-out;
-  font-weight: 500;
-  text-decoration: none;
 }
 @media screen and (min-width: 76rem) {
   .ck-content .link--fancy,
@@ -1328,6 +1338,17 @@
 .ck-content .editorial .link--fancy-reverse:hover,
 .ck-content .editorial .link--fancy-reverse:active {
   color: var(--fancy-link-active);
+}
+.ck-content .link--fancy,
+.ck-content .link--fancy-reverse,
+.ck-content .editorial .link--fancy,
+.ck-content .editorial .link--fancy-reverse {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5rem;
+  transition: color 0.2s ease-in-out;
+  font-weight: 500;
+  text-decoration: none;
 }
 .ck-content .link--fancy::before,
 .ck-content .link--fancy-reverse::before,
@@ -1452,8 +1473,6 @@
   --wordmark-color: var(--color-wildcat-white);
   --dashed-border-color: rgba(255, 255, 255, 0.3);
   --form-borders: transparent;
-  color: var(--text);
-  background-color: #000000;
 }
 .ck-content .formatted-text--dark a:link, .ck-content .formatted-text--dark a:visited {
   color: var(--link);
@@ -1467,6 +1486,10 @@
 .ck-content .formatted-text--dark a.button:hover, .ck-content .formatted-text--dark a.button:active {
   color: var(--button-hover-text);
 }
+.ck-content .formatted-text--dark {
+  color: var(--text);
+  background-color: #000000;
+}
 .ck-content .calendar-preview {
   color: #0033a0;
   height: 6rem;
@@ -1475,17 +1498,19 @@
 .ck-content .calendar-preview .stacked-date {
   font-size: 2rem;
   line-height: 1.5rem;
-  border-right: solid 2px #0033a0;
-  display: inline-block;
-  font-weight: 600;
-  height: 100%;
-  width: 33%;
 }
 @media screen and (min-width: 76rem) {
   .ck-content .calendar-preview .stacked-date {
     font-size: 2.375rem;
     line-height: 2rem;
   }
+}
+.ck-content .calendar-preview .stacked-date {
+  border-right: solid 2px #0033a0;
+  display: inline-block;
+  font-weight: 600;
+  height: 100%;
+  width: 33%;
 }
 .ck-content .calendar-preview .calendar-heading {
   display: inline-block;
@@ -1499,9 +1524,34 @@
 .ck-content input.button {
   font-size: 1.1667rem;
   line-height: 1.5rem;
+}
+@media screen and (min-width: 76rem) {
+  .ck-content button,
+  .ck-content a.button,
+  .ck-content input.button {
+    font-size: 1.1667rem;
+    line-height: 1.5rem;
+  }
+}
+.ck-content button,
+.ck-content a.button,
+.ck-content input.button {
   display: block;
   width: 80%;
   margin: 0.5rem auto;
+}
+@media screen and (min-width: 35rem) {
+  .ck-content button,
+  .ck-content a.button,
+  .ck-content input.button {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+  }
+}
+.ck-content button,
+.ck-content a.button,
+.ck-content input.button {
   padding-top: calc(1rem - 2px);
   padding-right: calc(1.875rem - 3px);
   padding-bottom: calc(1rem - 4px);
@@ -1517,23 +1567,6 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-@media screen and (min-width: 76rem) {
-  .ck-content button,
-  .ck-content a.button,
-  .ck-content input.button {
-    font-size: 1.1667rem;
-    line-height: 1.5rem;
-  }
-}
-@media screen and (min-width: 35rem) {
-  .ck-content button,
-  .ck-content a.button,
-  .ck-content input.button {
-    display: inline-block;
-    width: auto;
-    margin: 0;
-  }
 }
 .ck-content button:link, .ck-content button:visited,
 .ck-content a.button:link,
@@ -1923,8 +1956,6 @@
 .ck-content input.button.button--small {
   font-size: 0.875rem;
   line-height: 1rem;
-  padding-right: calc(1.625rem - 3px);
-  padding-left: calc(1.625rem - 3px);
 }
 @media screen and (min-width: 76rem) {
   .ck-content button.button--small,
@@ -1934,13 +1965,17 @@
     line-height: 1rem;
   }
 }
+.ck-content button.button--small,
+.ck-content a.button.button--small,
+.ck-content input.button.button--small {
+  padding-right: calc(1.625rem - 3px);
+  padding-left: calc(1.625rem - 3px);
+}
 .ck-content button.button--large,
 .ck-content a.button.button--large,
 .ck-content input.button.button--large {
   font-size: 1.1667rem;
   line-height: 1.5rem;
-  padding-right: calc(2rem - 3px);
-  padding-left: calc(2rem - 3px);
 }
 @media screen and (min-width: 76rem) {
   .ck-content button.button--large,
@@ -1949,6 +1984,12 @@
     font-size: 1.1667rem;
     line-height: 1.5rem;
   }
+}
+.ck-content button.button--large,
+.ck-content a.button.button--large,
+.ck-content input.button.button--large {
+  padding-right: calc(2rem - 3px);
+  padding-left: calc(2rem - 3px);
 }
 .ck-content button.video-button {
   display: block;
@@ -1969,7 +2010,6 @@
 .ck-content ol li {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 76rem) {
   .ck-content #main-content ul li,
@@ -1977,6 +2017,10 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+.ck-content #main-content ul li,
+.ck-content ol li {
+  margin-bottom: 0.5rem;
 }
 .ck-content #main-content ul.no-decoration,
 .ck-content ol.no-decoration {
@@ -1996,8 +2040,6 @@
 .ck-content dl dt {
   font-size: 1.1667rem;
   line-height: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
 }
 @media screen and (min-width: 76rem) {
   .ck-content dl dt {
@@ -2005,17 +2047,23 @@
     line-height: 2rem;
   }
 }
+.ck-content dl dt {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
 .ck-content dl dd {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 1rem;
-  margin-left: 0;
 }
 @media screen and (min-width: 76rem) {
   .ck-content dl dd {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+.ck-content dl dd {
+  margin-bottom: 1rem;
+  margin-left: 0;
 }
 .ck-content dl.described-links dt {
   margin-bottom: 0;
@@ -2059,7 +2107,6 @@
 .ck-content .editorial ul li {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 76rem) {
   .ck-content .editorial ol li,
@@ -2067,6 +2114,10 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+.ck-content .editorial ol li,
+.ck-content .editorial ul li {
+  margin-bottom: 0.5rem;
 }
 .ck-content .editorial a.button,
 .ck-content .editorial button {
