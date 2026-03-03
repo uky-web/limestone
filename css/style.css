@@ -168,184 +168,200 @@ body {
   content: "\ea05";
 }
 
-.ic--bolt::before {
+.ic--bluesky-block::before {
   content: "\ea06";
 }
 
-.ic--camera::before {
+.ic--bluesky::before {
   content: "\ea07";
 }
 
-.ic--checker-3-fill::before {
+.ic--bolt::before {
   content: "\ea08";
 }
 
-.ic--checker-4-nofill::before {
+.ic--camera::before {
   content: "\ea09";
 }
 
-.ic--clock::before {
+.ic--checker-3-fill::before {
   content: "\ea0a";
 }
 
-.ic--close::before {
+.ic--checker-4-nofill::before {
   content: "\ea0b";
 }
 
-.ic--discord-block::before {
+.ic--clock::before {
   content: "\ea0c";
 }
 
-.ic--discord::before {
+.ic--close::before {
   content: "\ea0d";
 }
 
-.ic--event::before {
+.ic--discord-block::before {
   content: "\ea0e";
 }
 
-.ic--facebook-block::before {
+.ic--discord::before {
   content: "\ea0f";
 }
 
-.ic--facebook::before {
+.ic--event::before {
   content: "\ea10";
 }
 
-.ic--gallery-open::before {
+.ic--facebook-block::before {
   content: "\ea11";
 }
 
-.ic--home::before {
+.ic--facebook::before {
   content: "\ea12";
 }
 
-.ic--info::before {
+.ic--gallery-open::before {
   content: "\ea13";
 }
 
-.ic--instagram-block::before {
+.ic--home::before {
   content: "\ea14";
 }
 
-.ic--instagram::before {
+.ic--info::before {
   content: "\ea15";
 }
 
-.ic--linkedin-block::before {
+.ic--instagram-block::before {
   content: "\ea16";
 }
 
-.ic--linkedin::before {
+.ic--instagram::before {
   content: "\ea17";
 }
 
-.ic--magnify::before {
+.ic--linkedin-block::before {
   content: "\ea18";
 }
 
-.ic--menu::before {
+.ic--linkedin::before {
   content: "\ea19";
 }
 
-.ic--pause::before {
+.ic--magnify::before {
   content: "\ea1a";
 }
 
-.ic--pin::before {
+.ic--menu::before {
   content: "\ea1b";
 }
 
-.ic--pinterest-block::before {
+.ic--pause::before {
   content: "\ea1c";
 }
 
-.ic--pinterest::before {
+.ic--pin::before {
   content: "\ea1d";
 }
 
-.ic--play-triangle::before {
+.ic--pinterest-block::before {
   content: "\ea1e";
 }
 
-.ic--popup::before {
+.ic--pinterest::before {
   content: "\ea1f";
 }
 
-.ic--quote-close::before {
+.ic--play-triangle::before {
   content: "\ea20";
 }
 
-.ic--quote-open::before {
+.ic--popup::before {
   content: "\ea21";
 }
 
-.ic--rss::before {
+.ic--quote-close::before {
   content: "\ea22";
 }
 
-.ic--snapchat-block::before {
+.ic--quote-open::before {
   content: "\ea23";
 }
 
-.ic--snapchat::before {
+.ic--reddit-block::before {
   content: "\ea24";
 }
 
-.ic--threads-block::before {
+.ic--reddit::before {
   content: "\ea25";
 }
 
-.ic--threads::before {
+.ic--rss::before {
   content: "\ea26";
 }
 
-.ic--tiktok-block::before {
+.ic--snapchat-block::before {
   content: "\ea27";
 }
 
-.ic--tiktok::before {
+.ic--snapchat::before {
   content: "\ea28";
 }
 
-.ic--triangle-left::before {
+.ic--threads-block::before {
   content: "\ea29";
 }
 
-.ic--twitch-block::before {
+.ic--threads::before {
   content: "\ea2a";
 }
 
-.ic--twitch::before {
+.ic--tiktok-block::before {
   content: "\ea2b";
 }
 
-.ic--twitter-block::before {
+.ic--tiktok::before {
   content: "\ea2c";
 }
 
-.ic--twitter::before {
+.ic--triangle-left::before {
   content: "\ea2d";
 }
 
-.ic--video::before {
+.ic--twitch-block::before {
   content: "\ea2e";
 }
 
-.ic--x-block::before {
+.ic--twitch::before {
   content: "\ea2f";
 }
 
-.ic--x::before {
+.ic--twitter-block::before {
   content: "\ea30";
 }
 
-.ic--youtube-block::before {
+.ic--twitter::before {
   content: "\ea31";
 }
 
-.ic--youtube::before {
+.ic--video::before {
   content: "\ea32";
+}
+
+.ic--x-block::before {
+  content: "\ea33";
+}
+
+.ic--x::before {
+  content: "\ea34";
+}
+
+.ic--youtube-block::before {
+  content: "\ea35";
+}
+
+.ic--youtube::before {
+  content: "\ea36";
 }
 
 .slick-loading .slick-list {
@@ -2335,8 +2351,11 @@ a {
   text-decoration: underline;
 }
 .art-link.campus-map {
-  background-image: url("../../images/campus-map-texture.jpg");
+  background-image: url("../images/campus-map-texture.jpg") !important;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: initial;
 }
 
 .formatted-text--dark {
@@ -8144,15 +8163,16 @@ a .icon-label .label {
   max-height: 80vw;
 }
 
-.image-gallery__block a {
+.image-gallery__block .image-gallery__popup-launcher {
   display: block;
   overflow: hidden;
+  cursor: pointer;
 }
-.image-gallery__block a:hover figure img, .image-gallery__block a:focus figure img {
+.image-gallery__block .image-gallery__popup-launcher:hover figure img, .image-gallery__block .image-gallery__popup-launcher:focus figure img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.image-gallery__block a:hover figure::before, .image-gallery__block a:hover figure::after, .image-gallery__block a:focus figure::before, .image-gallery__block a:focus figure::after {
+.image-gallery__block .image-gallery__popup-launcher:hover figure::before, .image-gallery__block .image-gallery__popup-launcher:hover figure::after, .image-gallery__block .image-gallery__popup-launcher:focus figure::before, .image-gallery__block .image-gallery__popup-launcher:focus figure::after {
   opacity: 1;
 }
 .image-gallery__block figure {
@@ -8175,7 +8195,7 @@ a .icon-label .label {
   font-family: "iconfont";
   font-size: 2.2em;
   line-height: 1.2;
-  content: "\ea11";
+  content: "\ea13";
   opacity: 0;
   z-index: 10;
 }
@@ -8694,7 +8714,7 @@ button.mfp-close {
   margin-left: 0.3em;
   font-family: "iconfont";
   font-size: 2em;
-  content: "\ea0b";
+  content: "\ea0d";
   vertical-align: middle;
 }
 
@@ -8743,14 +8763,14 @@ button.mfp-close {
 }
 .pullquote__quote p::before {
   margin-right: 0.5em;
-  content: "\ea21";
+  content: "\ea23";
 }
 .pullquote__quote p::after {
   position: relative;
   right: -2.1em;
   width: 0;
   margin-left: -1.6em;
-  content: "\ea20";
+  content: "\ea22";
 }
 .pullquote__meta {
   position: relative;
@@ -9046,7 +9066,7 @@ button.mfp-close {
   margin-right: 0.3em;
   font-family: iconfont;
   font-weight: normal;
-  content: "\ea18";
+  content: "\ea1a";
   vertical-align: text-bottom;
 }
 .search-control:hover, .search-control:active {
@@ -13924,7 +13944,7 @@ button.mfp-close {
 }
 .universal-breadcrumb .link--fancy-reverse::before {
   top: 0.05em;
-  content: "\ea29";
+  content: "\ea2d";
 }
 .universal-breadcrumb sub {
   position: relative;

@@ -112,140 +112,152 @@
 .ck-content .ic--audio::before {
   content: "\ea05";
 }
-.ck-content .ic--bolt::before {
+.ck-content .ic--bluesky-block::before {
   content: "\ea06";
 }
-.ck-content .ic--camera::before {
+.ck-content .ic--bluesky::before {
   content: "\ea07";
 }
-.ck-content .ic--checker-3-fill::before {
+.ck-content .ic--bolt::before {
   content: "\ea08";
 }
-.ck-content .ic--checker-4-nofill::before {
+.ck-content .ic--camera::before {
   content: "\ea09";
 }
-.ck-content .ic--clock::before {
+.ck-content .ic--checker-3-fill::before {
   content: "\ea0a";
 }
-.ck-content .ic--close::before {
+.ck-content .ic--checker-4-nofill::before {
   content: "\ea0b";
 }
-.ck-content .ic--discord-block::before {
+.ck-content .ic--clock::before {
   content: "\ea0c";
 }
-.ck-content .ic--discord::before {
+.ck-content .ic--close::before {
   content: "\ea0d";
 }
-.ck-content .ic--event::before {
+.ck-content .ic--discord-block::before {
   content: "\ea0e";
 }
-.ck-content .ic--facebook-block::before {
+.ck-content .ic--discord::before {
   content: "\ea0f";
 }
-.ck-content .ic--facebook::before {
+.ck-content .ic--event::before {
   content: "\ea10";
 }
-.ck-content .ic--gallery-open::before {
+.ck-content .ic--facebook-block::before {
   content: "\ea11";
 }
-.ck-content .ic--home::before {
+.ck-content .ic--facebook::before {
   content: "\ea12";
 }
-.ck-content .ic--info::before {
+.ck-content .ic--gallery-open::before {
   content: "\ea13";
 }
-.ck-content .ic--instagram-block::before {
+.ck-content .ic--home::before {
   content: "\ea14";
 }
-.ck-content .ic--instagram::before {
+.ck-content .ic--info::before {
   content: "\ea15";
 }
-.ck-content .ic--linkedin-block::before {
+.ck-content .ic--instagram-block::before {
   content: "\ea16";
 }
-.ck-content .ic--linkedin::before {
+.ck-content .ic--instagram::before {
   content: "\ea17";
 }
-.ck-content .ic--magnify::before {
+.ck-content .ic--linkedin-block::before {
   content: "\ea18";
 }
-.ck-content .ic--menu::before {
+.ck-content .ic--linkedin::before {
   content: "\ea19";
 }
-.ck-content .ic--pause::before {
+.ck-content .ic--magnify::before {
   content: "\ea1a";
 }
-.ck-content .ic--pin::before {
+.ck-content .ic--menu::before {
   content: "\ea1b";
 }
-.ck-content .ic--pinterest-block::before {
+.ck-content .ic--pause::before {
   content: "\ea1c";
 }
-.ck-content .ic--pinterest::before {
+.ck-content .ic--pin::before {
   content: "\ea1d";
 }
-.ck-content .ic--play-triangle::before {
+.ck-content .ic--pinterest-block::before {
   content: "\ea1e";
 }
-.ck-content .ic--popup::before {
+.ck-content .ic--pinterest::before {
   content: "\ea1f";
 }
-.ck-content .ic--quote-close::before {
+.ck-content .ic--play-triangle::before {
   content: "\ea20";
 }
-.ck-content .ic--quote-open::before {
+.ck-content .ic--popup::before {
   content: "\ea21";
 }
-.ck-content .ic--rss::before {
+.ck-content .ic--quote-close::before {
   content: "\ea22";
 }
-.ck-content .ic--snapchat-block::before {
+.ck-content .ic--quote-open::before {
   content: "\ea23";
 }
-.ck-content .ic--snapchat::before {
+.ck-content .ic--reddit-block::before {
   content: "\ea24";
 }
-.ck-content .ic--threads-block::before {
+.ck-content .ic--reddit::before {
   content: "\ea25";
 }
-.ck-content .ic--threads::before {
+.ck-content .ic--rss::before {
   content: "\ea26";
 }
-.ck-content .ic--tiktok-block::before {
+.ck-content .ic--snapchat-block::before {
   content: "\ea27";
 }
-.ck-content .ic--tiktok::before {
+.ck-content .ic--snapchat::before {
   content: "\ea28";
 }
-.ck-content .ic--triangle-left::before {
+.ck-content .ic--threads-block::before {
   content: "\ea29";
 }
-.ck-content .ic--twitch-block::before {
+.ck-content .ic--threads::before {
   content: "\ea2a";
 }
-.ck-content .ic--twitch::before {
+.ck-content .ic--tiktok-block::before {
   content: "\ea2b";
 }
-.ck-content .ic--twitter-block::before {
+.ck-content .ic--tiktok::before {
   content: "\ea2c";
 }
-.ck-content .ic--twitter::before {
+.ck-content .ic--triangle-left::before {
   content: "\ea2d";
 }
-.ck-content .ic--video::before {
+.ck-content .ic--twitch-block::before {
   content: "\ea2e";
 }
-.ck-content .ic--x-block::before {
+.ck-content .ic--twitch::before {
   content: "\ea2f";
 }
-.ck-content .ic--x::before {
+.ck-content .ic--twitter-block::before {
   content: "\ea30";
 }
-.ck-content .ic--youtube-block::before {
+.ck-content .ic--twitter::before {
   content: "\ea31";
 }
-.ck-content .ic--youtube::before {
+.ck-content .ic--video::before {
   content: "\ea32";
+}
+.ck-content .ic--x-block::before {
+  content: "\ea33";
+}
+.ck-content .ic--x::before {
+  content: "\ea34";
+}
+.ck-content .ic--youtube-block::before {
+  content: "\ea35";
+}
+.ck-content .ic--youtube::before {
+  content: "\ea36";
 }
 .ck-content .text-xs-hpc {
   background-color: rgba(200, 255, 200, 0.3);
@@ -1428,8 +1440,11 @@
   text-decoration: underline;
 }
 .ck-content .art-link.campus-map {
-  background-image: url("../../images/campus-map-texture.jpg");
+  background-image: url("../images/campus-map-texture.jpg") !important;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: initial;
 }
 .ck-content .formatted-text--dark {
   --link: var(--color-wildcat-white);
