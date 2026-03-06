@@ -3,7 +3,7 @@
   "description": "The Limestone component library.",
   "license": "MIT",
   "type": "uky-web-module",
-  "version": "3.13.0",
+  "version": "3.13.1",
   "support": {
     "source": "https://github.com/uky-web/limestone"
   },

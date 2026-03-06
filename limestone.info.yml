@@ -2,7 +2,7 @@ name: Limestone
 description: The Limestone component library.
 package: UKY
 type: module
-version: '3.13.0'
+version: '3.13.1'
 core_version_requirement: ">=10"
 
 stylesheets:
