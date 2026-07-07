@@ -62,8 +62,8 @@
 }
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-fc814ab2dc.eot");
-  src: url("../fonts/icons-fc814ab2dc.eot?#iefix") format("eot"), url("../fonts/icons-6f457982a2.woff2") format("woff2"), url("../fonts/icons-6ebe441a1f.woff") format("woff"), url("../fonts/icons-4e418bfd72.ttf") format("truetype"), url("../fonts/icons-aa0f5d3c0d.svg#icons") format("svg");
+  src: url("../fonts/icons-dea0dd3901.eot");
+  src: url("../fonts/icons-dea0dd3901.eot?#iefix") format("eot"), url("../fonts/icons-78e8b123ff.woff2") format("woff2"), url("../fonts/icons-ed8bec7074.woff") format("woff"), url("../fonts/icons-ab000cc658.ttf") format("truetype"), url("../fonts/icons-aa0f5d3c0d.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1127,7 +1127,7 @@
 .ck-content .checker-endmark::after {
   width: 100%;
   font-family: "iconfont";
-  content: "\ea08";
+  content: "\ea0a";
   display: block;
   color: #0033a0;
   font-style: normal;
